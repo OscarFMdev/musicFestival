@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header"> <!-- Para aplicar el color -->
+        <div class="contenedor contenido-header"> <!--La clase contenedor sirve para centrarlo-->
+            <h1>Rock & EDM festival</h1>
+
+            <nav class = "navegacion-principal">
+                <a href="#line-up">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM festival</h2>
+                <p>Julio 2022 León, México</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type = "image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type = "image/webp">
+                <img loading ="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt=" imagen vocalista"> <!--Fallback-->
+            </picture>
+        
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Julio 2022, León Guanajuato México</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ut voluptates? Eligendi odio architecto sapiente doloremque mollitia iusto nisi vitae at odit laborum rerum voluptas maiores vel, pariatur incidunt assumenda!</p>
+        </div>
+    </section>
+
+    <section id="line-up" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor-->
+
+        <p class="dia">Sábado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor-->
+    </section>
+
+    <section id = "galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes">
+
+        </ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 día</p>
+
+                <header class="pase-header"> 
+                <!--Header puede ser también la parte superior de un elemento-->
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 días</p>
+                <header class="pase-header"> 
+                        <p>Incluye</p>
+                    </header>
+                    <div class="pase-body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Comida y bebida</li>
+                            <li>Camisa del evento</li>
+                            <li>Acceso VIP</li>
+                        </ul>
+                    </div>
+                    <footer class="pase-footer">
+                        <p>$100</p>
+                    </footer>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM festival. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+
+</body>
+</html>
